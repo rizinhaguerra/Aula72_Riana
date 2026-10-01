@@ -1,0 +1,18 @@
+let tamanho = 18;
+
+const aumentar = document.querySelector("#aumentar");
+const diminuir = document.querySelector("#diminuir");
+
+aumentar.onclick = function () {
+    if (tamanho < 28) {
+        tamanho += 2;
+        document.body.style.fontSize = tamanho + "px";
+    }
+};
+
+diminuir.onclick = function () {
+    if (tamanho > 14) {
+        tamanho -= 2;
+        document.body.style.fontSize = tamanho + "px";
+    }
+};
